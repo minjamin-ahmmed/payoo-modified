@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS</title>
+
+<!-- Daisy UI and Tailwind CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+    .kanit{
+  font-family: "Kanit", sans-serif;
+ 
+}
+</style>
+
+</head>
+<body class="kanit">
+    <main>
+       <div class="flex justify-center mt-5">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+
+                <!-- Amount Show -->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-title">Account Balance</div>
+                      <div class="stat-value">9400</div>
+                    </div>
+                  </div>
+
+                  <!-- Divider -->
+                  <div class="divider"></div>
+
+                  <!-- Add Money Form Start-->
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="amount" type="text" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin Number</span>
+                        </label>
+                        <input id="pin-number" type="password" autocomplete="off" placeholder="Your Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                     <!-- Add Money Form end-->
+
+              </div>
+            </div>
+          </div>
+       </div>
+    </main>
+    <script src="js/add-money.js"></script>
+</body>
+</html>
